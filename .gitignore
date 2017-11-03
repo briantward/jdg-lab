@@ -1,0 +1,12 @@
+*.class
+*.war
+*.ear
+*.jar
+*.iml
+target
+.idea
+.settings
+.project
+.classpath
+Infinispan-SingleFileStore
+com.redhat.consulting.tutorials.jdgshortlab.model.Beer

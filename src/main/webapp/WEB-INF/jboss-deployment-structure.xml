@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-deployment-structure>
+    <deployment>
+        <dependencies>
+            <module name="org.infinispan" slot="jdg-7.1" services="export"/>
+            <module name="org.infinispan.query" slot="jdg-7.1" services="export"/>
+            <module name="org.infinispan.query.dsl" slot="jdg-7.1" services="export"/>
+        </dependencies>
+    </deployment>
+</jboss-deployment-structure>
