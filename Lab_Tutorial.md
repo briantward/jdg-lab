@@ -2,30 +2,53 @@
 ## Lab Tutorial
 
 ### Set up dependencies
-1. Unzip EAP server
+
+
+1. Install Maven (for our non-Java experienced friends)
+    ```
+    dnf install maven
+    ```
+2. Clone this repo
+    ```
+    git clone git@github.com:briantward/jdg-lab.git
+    ```
+3. Build or package (skips tests by default because you need a container.
+    This is because, as a good friend put it, middleware and java maven
+    projects like to download the whole internet to work.)
+    ```
+    mvn clean package
+    ```
+4. Unzip EAP server to directory of your choice.
     ```
     unzip jboss-eap-7.0.0.zip
     ```
 
-2. Unzip JDG library and move overtop EAP server modules.
+5. Unzip JDG library and move overtop EAP server modules.
     ```
     unzip jboss-datagrid-7.1.0-eap-modules-library.zip
     mv jboss-datagrid-7.1.0-eap-modules-library/modules/* jboss-eap-7.0/modules/
     ```
 
-3. Update you server directory in the arquillian.xml file
+6. Update your server directory in the arquillian.xml file
     ```
     <property name="jbossHome">/PATH/TO/jboss-eap-7.0</property>
     ```
 
-4. Build or package (skips tests because you need a container)
-    ```
-    mvn clean package
-    ```
+6. Run tests:
 
-5. Run all tests:
+    All at once:
+
     ```
     mvn clean test -Parq-tests
+    ```
+
+    Run a specific test:
+
+    ```
+    mvn clean test -Parq-tests -Dtest=CacheDataArquillianTest
+    mvn clean test -Parq-tests -Dtest=DatabaseDataArquillianTest
+    mvn clean test -Parq-tests -Dtest=SearchArquillianTest
+    mvn clean test -Parq-tests -Dtest=IndexedSearchArquillianTest
     ```
 
 ### Overview

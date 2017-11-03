@@ -8,7 +8,7 @@
  - stock tickers
  - car mart
 
-# Library Mode Configuration
+# [Library Mode Query Lab Tutorial](Lab_Tutorial.md)
 
 # Query the Data Grid
  - How does it compare to searching JBDC or Hibernate / traditional EntityManager?
@@ -24,7 +24,8 @@
  - Persistence
  - Cache Integrity
 
-# Competitors: [Top 15 In Memory Data Grid Platform](https://www.predictiveanalyticstoday.com/top-memory-data-grid-applications/)
+# Competitors:
+ - [Top 15 In Memory Data Grid Platform](https://www.predictiveanalyticstoday.com/top-memory-data-grid-applications/)
  - Hazelcast IMDG
  - GridGain IMDG (Apache Ignite)
  - Oracle Coherence
