@@ -101,13 +101,11 @@
     ```
 
 3. Cache Persistence
-
-    Cache Stores
-        - file
-        - remote cache
-        - JDBC
-        - JPA
-        - LevelDB
+    - file
+    - remote cache
+    - JDBC
+    - JPA
+    - LevelDB
 
 4. Finding entries in the cache
      - [Lucene Query](https://access.redhat.com/documentation/en-us/red_hat_jboss_data_grid/7.1/html-single/developer_guide/#querying).  Indexing is required and the cache must be an embedded type.
